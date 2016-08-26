@@ -1,0 +1,61 @@
+body > header, body > footer {
+    background-color: #cc181e;
+}
+
+body > footer {
+    padding: 1em 0.5em 0.5em;
+    color: #FFF;
+}
+
+body > footer a {
+    color: #EEE;
+}
+
+body > header h1 {
+    margin-left: 1em;
+    color: #FFF
+}
+#header-search-form {
+    padding:2em;
+}
+
+#header-search-field {
+    border: 0;
+    padding: 0.25em;
+}
+
+#main-list-container ul {
+    list-style-type: none;
+}
+
+#main-list-container ul li {
+    padding:2em 0.5em;
+    
+}
+
+#main-list .thumbnail-container {
+    margin: 0 1em;
+}
+
+#main-list h3 {
+    margin-top: 0px;
+}
+
+.skeleton h1 {
+    background-color: #EEE;
+    color: #EEE;
+    margin-top: 0px;
+}
+
+.skeleton .empty-photo {
+    height: 100px;
+    background-color: #EEE;
+    margin: 0 0 1em;
+}
+
+.skeleton p {
+    width:100%;
+    background-color: #F3F3F3;
+    color: #F3F3F3;
+}
+
