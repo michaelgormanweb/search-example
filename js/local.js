@@ -1,9 +1,6 @@
 document.getElementById('header-search-form').addEventListener('submit', function(e) {
     e.preventDefault();
     executeSearch(document.getElementById('header-search-field').value);
-    
-    
-    
 });
 
 function executeSearch(q) {
@@ -15,11 +12,8 @@ function executeSearch(q) {
     xhr.onload = function() {
         if (xhr.status === 200) {
             eval("var response = ("+xhr.responseText+")");
-            
-            console.log("Response: ", response);
-
             for(item in response.items) {
-                console.log(response.items[item]);
+//                console.log(response.items[item]);
                 buildResultItem(response.items[item], mainList);
             }
         }
@@ -66,7 +60,6 @@ function renderDescription(item, container) {
     var text;
     if (item.snippet.description === '' || item.snippet.description === null || item.snippet.description === undefined) {
         text = document.createTextNode('(No description)');
-        console.log("test", text);
     } else {
         text = document.createTextNode(item.snippet.description);
     }
